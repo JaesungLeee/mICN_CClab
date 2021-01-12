@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "602663340791",
+    "project_id": "micn-js",
+    "storage_bucket": "micn-js.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602663340791:android:253e98dd6d9d6e5bbbe1f2",
+        "android_client_info": {
+          "package_name": "com.example.micnjs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602663340791-ahvsf2pupnpf5r0ooi69vnb1bpbqtok6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.micnjs",
+            "certificate_hash": "dee9f537e7d43d57357f9eed71b7d9d9fce43fbe"
+          }
+        },
+        {
+          "client_id": "602663340791-9uuqhladh1rknh5lt9dern9r3omfhqks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJBvmqIOD1vc9k-pAsAuDZfPZUlYiGYP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602663340791-9uuqhladh1rknh5lt9dern9r3omfhqks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
