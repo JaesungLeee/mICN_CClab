@@ -23,6 +23,11 @@ class patientHome : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_patient_home)
 
+        updateProfile_btn.setOnClickListener {
+            val intent = Intent(this, profile::class.java)
+            startActivity(intent)
+        }
+
         menu_faBtn.setOnClickListener {
             onAddButtonClicked()
         }
