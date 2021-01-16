@@ -76,7 +76,7 @@
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <LinearLayout
-        android:id="@+id/checkMy_layout"
+        android:id="@+id/checkMy_lLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -99,6 +99,43 @@
 
 
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_lLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/checkMy_lLayout">
+
+        <Button
+            android:id="@+id/deliverInfo_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="Deliver Information"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/round_warmtone_btn"/>
+
+        <Button
+            android:id="@+id/retreiveInfo_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="Retrieve Information"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/round_warmtone_btn"/>
+    </LinearLayout>
+
+
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
