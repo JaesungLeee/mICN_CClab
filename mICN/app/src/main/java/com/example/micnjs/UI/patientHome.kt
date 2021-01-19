@@ -17,5 +17,9 @@ class patientHome : AppCompatActivity() {
             startActivity(intent)
         }
 
+        retreiveInfo_btn.setOnClickListener {
+            val intent = Intent(this, retrieveInfo::class.java)
+            startActivity(intent)
+        }
     }
 }

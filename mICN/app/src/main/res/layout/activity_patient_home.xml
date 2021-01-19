@@ -80,32 +80,32 @@
         android:id="@+id/seeMy_lLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@id/updateProfile_btn">
 
         <Button
             android:id="@+id/doctors_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="8dp"
             android:layout_weight="1"
             android:text="See My Doctors"
-            android:textSize="15sp"
+            android:textSize="18sp"
             android:textColor="@color/white"
             android:textAllCaps="false"
             android:background="@drawable/rectangle_violet_btn"/>
 
         <Button
             android:id="@+id/reports_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="8dp"
             android:layout_weight="1"
             android:text="See My Reports"
-            android:textSize="15sp"
+            android:textSize="18sp"
             android:textColor="@color/white"
             android:textAllCaps="false"
             android:background="@drawable/rectangle_violet_btn"/>
@@ -115,23 +115,11 @@
         android:id="@+id/info_lLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@id/seeMy_lLayout">
-
-        <Button
-            android:id="@+id/deliverInfo_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:layout_weight="1"
-            android:text="Deliver Information"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:textAllCaps="false"
-            android:background="@drawable/round_warmtone_btn"/>
 
         <Button
             android:id="@+id/retreiveInfo_btn"
@@ -144,6 +132,42 @@
             android:textColor="@color/white"
             android:textAllCaps="false"
             android:background="@drawable/round_warmtone_btn"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/info_lLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" >
+
+        <Button
+            android:id="@+id/pLogout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="Log Out"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@drawable/round_pantoneblue_btn"/>
+
+        <Button
+            android:id="@+id/pEmergency_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="Emergency"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@drawable/round_red_btn" />
     </LinearLayout>
 
 
