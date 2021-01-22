@@ -20,7 +20,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MICN">
-        <activity android:name=".UI.contents"></activity>
+        <activity android:name=".UI.myReports"></activity>
+        <activity android:name=".UI.myDoctors" />
+        <activity android:name=".UI.contents" />
         <activity android:name=".UI.retrieveInfo" />
         <activity android:name=".UI.emergency" />
         <activity android:name=".UI.profile" />

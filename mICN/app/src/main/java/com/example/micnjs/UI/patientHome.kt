@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.micnjs.R
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_patient_home.*
 
 class patientHome : AppCompatActivity() {
@@ -21,5 +22,28 @@ class patientHome : AppCompatActivity() {
             val intent = Intent(this, retrieveInfo::class.java)
             startActivity(intent)
         }
+
+        pEmergency_btn.setOnClickListener {
+            val intent = Intent(this, emergency::class.java)
+            startActivity(intent)
+        }
+
+        doctors_btn.setOnClickListener {
+            val intent = Intent(this, myDoctors::class.java)
+            startActivity(intent)
+        }
+
+        reports_btn.setOnClickListener {
+            val intent = Intent(this, myReports::class.java)
+            startActivity(intent)
+        }
+
+        pLogout_btn.setOnClickListener {
+            logout()
+        }
+    }
+
+    private fun logout() {
+        FirebaseAuth.getInstance().signOut()
     }
 }
