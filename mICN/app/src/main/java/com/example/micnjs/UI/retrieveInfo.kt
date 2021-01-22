@@ -15,7 +15,6 @@ class retrieveInfo : AppCompatActivity() {
         connectServer_btn.setOnClickListener {
             // Implement of Connecting with Server
             connectServer_tV.visibility = View.VISIBLE
-            contentsBtn_tV.visibility = View.VISIBLE
             contents_btn.visibility = View.VISIBLE
         }
 

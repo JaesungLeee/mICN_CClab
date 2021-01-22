@@ -58,7 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="60dp"
             android:text="Connected with Server {Type Of PC}"
             android:textAlignment="center"
             android:textColor="@color/Pantoneblue"
@@ -66,28 +66,16 @@
             android:textStyle="bold"
             android:visibility="invisible" />
 
-        <TextView
-            android:id="@+id/contentsBtn_tV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-            android:text="Here is the button of all the \navailable contents"
-            android:textAlignment="center"
-            android:textColor="@color/Pantoneblue"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:visibility="invisible" />
 
         <Button
             android:id="@+id/contents_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="32dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="80dp"
             android:layout_marginRight="32dp"
             android:background="@drawable/round_warmtone_btn"
-            android:text="Contents"
+            android:text="Show All Contents"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="18sp"

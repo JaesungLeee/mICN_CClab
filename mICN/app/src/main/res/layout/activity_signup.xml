@@ -33,7 +33,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="480dp"
+        android:layout_height="550dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +59,7 @@
 
                     <EditText
                         android:id="@+id/editName"
-                        android:layout_width="346dp"
+                        android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:drawableLeft="@drawable/name"
@@ -213,6 +213,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="60dp"
                     android:layout_marginRight="60dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@drawable/round_pantoneblue_btn"
                     android:text="LOG IN"
                     android:textColor="@color/white"
