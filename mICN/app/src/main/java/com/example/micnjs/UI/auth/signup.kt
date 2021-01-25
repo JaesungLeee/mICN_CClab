@@ -8,32 +8,35 @@ import android.widget.Toast
 import com.example.micnjs.R
 import com.example.micnjs.UI.careGiver.careGiverHome
 import com.example.micnjs.UI.patient.patientHome
-import com.example.micnjs.firebaseDB.careGiver
-import com.example.micnjs.firebaseDB.patient
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_signup.*
 
 class signup : AppCompatActivity() {
-    private lateinit var auth : FirebaseAuth     // Firebase Authentication
-    private val db = FirebaseDatabase.getInstance()
-
-    var user = ""
+    lateinit var auth : FirebaseAuth     // Firebase Authentication
+    var databaseReference : DatabaseReference? = null
+    var database : FirebaseDatabase? = null
+    var userType = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
 
         auth = FirebaseAuth.getInstance()
+        database = FirebaseDatabase.getInstance()
+        databaseReference = database?.reference!!.child("User")
 
-        userType.setOnCheckedChangeListener { group, checkedId ->
+
+        userType_Group.setOnCheckedChangeListener { group, checkedId ->
             if (checkedId == R.id.userPatient) {
                 Log.e("CHECKID", "Click patient")
-                user = "Patient"
+                userType = "Patient"
             }
             else if (checkedId == R.id.userCareGiver) {
                 Log.e("CHECKID", "Click careGiver")
-                user = "CareGiver"
+                userType = "CareGiver"
+
             }
         }
 
@@ -43,7 +46,7 @@ class signup : AppCompatActivity() {
             var confirmPassword = editCPW.text.toString()
 
             if (confirmPassword == password) {
-                createUser(email, password, user)
+                createUser(email, password, userType)
             }
             else {
                 Toast.makeText(this, "Check your password again", Toast.LENGTH_SHORT).show()
@@ -56,23 +59,20 @@ class signup : AppCompatActivity() {
         }
     }
 
-    private fun createUser(email: String, password: String, user: String) {
-//        var birthY = datePicker.year.toString()
-//        var birthM = datePicker.month.toString()
-//        var birthD = datePicker.dayOfMonth.toString()
+    private fun createUser(email: String, password: String, userType: String) {
         var uid = ""  //auth.uid.toString()
-        var name = editName.text.toString()
-//        var birth = "$birthY-$birthM-$birthD"
+        var fullName = editName.text.toString()
         var birth = ""
-
+        var nickName = ""
 
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     uid = auth.currentUser?.uid.toString()
+
                     Toast.makeText(this, "SignUp Successful", Toast.LENGTH_SHORT).show()
 
-                    createDB(uid, name, email, password, birth, user)
+                    createDB(uid, nickName, fullName, email, password, birth, userType)
 
                     Log.e("createUser", "Successful")
                 }
@@ -83,26 +83,19 @@ class signup : AppCompatActivity() {
             }
     }
 
-    fun createDB(uid: String, name: String, email: String, password: String, birth: String, user : String) {
+    fun createDB(uid: String, nickName: String, fullName : String, email: String, password: String, birth: String, userType : String) {
         Log.e("CREATEDB", "cccc")
-        if (user == "Patient") {
-            db.reference.child("Patient").child(uid).setValue(
-                patient(
-                    uid,
-                    name,
-                    email,
-                    password,
-                    birth
-                )
-            )
+
+        if (userType == "Patient") {
+            val currentUserDB = databaseReference?.child(uid)
+            currentUserDB?.setValue(patient(uid, nickName, fullName, email, password, birth, userType))
         }
-        else if (user == "CareGiver") {
-            db.reference.child("CareGiver").child(uid).setValue(
-                    careGiver(uid, name, email, password, birth)
-            )
+        else if (userType == "CareGiver") {
+            val currentUserDB = databaseReference?.child(uid)
+            currentUserDB?.setValue(careGiver(uid, nickName, fullName, email, password, birth, userType))
         }
 
-        homePage(user)
+        homePage(userType)
     }
 
     fun homePage(user : String) {

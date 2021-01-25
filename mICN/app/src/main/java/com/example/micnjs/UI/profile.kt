@@ -10,6 +10,10 @@ class profile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
+//        var birthY = datePicker.year.toString()
+//        var birthM = datePicker.month.toString()
+//        var birthD = datePicker.dayOfMonth.toString()
+//        var birth = "$birthY-$birthM-$birthD"
 
         profileSave_btn.setOnClickListener {
             // Implement Save Info action to Database
