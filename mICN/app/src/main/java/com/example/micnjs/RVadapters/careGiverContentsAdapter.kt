@@ -1,4 +1,4 @@
-package com.example.micnjs.adapters
+package com.example.micnjs.RVadapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.micnjs.R
-import com.example.micnjs.models.careGiverContentsModel
+import com.example.micnjs.RVmodels.careGiverContentsModel
 import kotlinx.android.synthetic.main.care_giver_contents_layout.view.*
 
 class careGiverContentsAdapter(val careGiverContentsName : ArrayList<careGiverContentsModel>) : RecyclerView.Adapter<careGiverContentsAdapter.ViewHolder>() {

@@ -1,11 +1,11 @@
-package com.example.micnjs.adapters
+package com.example.micnjs.RVadapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.micnjs.R
-import com.example.micnjs.models.myPatientsModel
+import com.example.micnjs.RVmodels.myPatientsModel
 import kotlinx.android.synthetic.main.my_patients_layout.view.*
 
 class myPatientsAdapter(val patientsList : ArrayList<myPatientsModel>) : RecyclerView.Adapter<myPatientsAdapter.ViewHolder>() {

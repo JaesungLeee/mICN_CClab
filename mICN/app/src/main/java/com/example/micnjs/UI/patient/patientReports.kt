@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.micnjs.R
-import com.example.micnjs.adapters.patientReportsAdapter
-import com.example.micnjs.models.patientReportsModel
+import com.example.micnjs.RVadapters.patientReportsAdapter
+import com.example.micnjs.RVmodels.patientReportsModel
 import kotlinx.android.synthetic.main.activity_patient_reports.*
 
 

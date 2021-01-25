@@ -1,3 +1,3 @@
-package com.example.micnjs.models
+package com.example.micnjs.RVmodels
 
 class careGiverContentsModel(val content : String)

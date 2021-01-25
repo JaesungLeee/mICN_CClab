@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.micnjs.R
-import com.example.micnjs.adapters.careGiverContentsAdapter
-import com.example.micnjs.models.careGiverContentsModel
+import com.example.micnjs.RVadapters.careGiverContentsAdapter
+import com.example.micnjs.RVmodels.careGiverContentsModel
 import kotlinx.android.synthetic.main.activity_care_giver_contents.*
 
 class careGiverContents : AppCompatActivity() {

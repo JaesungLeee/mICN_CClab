@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.micnjs.R
-import com.example.micnjs.adapters.myDoctorsAdapter
-import com.example.micnjs.models.myDoctorsModel
+import com.example.micnjs.RVadapters.myDoctorsAdapter
+import com.example.micnjs.RVmodels.myDoctorsModel
 import kotlinx.android.synthetic.main.activity_my_doctors.*
 
 class myDoctors : AppCompatActivity() {
