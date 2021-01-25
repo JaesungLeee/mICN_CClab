@@ -47,8 +47,18 @@ class careGiverHome : AppCompatActivity() {
 
         Log.e("USERINFO", "uid : ${userUid}, nickname : ${userNickName}, password : ${userPW}, birth : ${userBirth}")
 
+        welcome_tV.text = "Hello ${userNickName}. Have a fuitful & nice day."
+
         updateProfile_btn.setOnClickListener {
-            val intent = Intent(this, profile::class.java)
+            val intent = Intent(this, profile::class.java).apply {
+                putExtra(USERUID, userUid)
+                putExtra(USERNICKNAME, userNickName)
+                putExtra(USERFULLNAME, userFullName)
+                putExtra(USEREMAIL, userEmail)
+                putExtra(USERPW, userPW)
+                putExtra(USERBIRTH, userBirth)
+                putExtra(USERTYPE, userType)
+            }
             startActivity(intent)
         }
 

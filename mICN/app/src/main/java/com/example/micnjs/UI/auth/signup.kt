@@ -111,18 +111,32 @@ class signup : AppCompatActivity() {
             Log.e("CHECK", "${uid}, ${nickName}, ${fullName}, ${email}, ${password}, ${birth}, ${userType}")
         }
 
-        movePage(userType)
+        movePage(userType, uid, nickName, fullName, email, password, birth)
     }
 
-    private fun movePage(userType : String) {
+    private fun movePage(userType: String, uid: String, nickName: String, fullName: String, email: String, password: String, birth: String) {
         if (userType == "Patient") {
             var intent = Intent(this, patientHome::class.java).apply {
-
+                putExtra(USERUID, uid)
+                putExtra(USERNICKNAME, nickName)
+                putExtra(USERFULLNAME, fullName)
+                putExtra(USEREMAIL, email)
+                putExtra(USERPW, password)
+                putExtra(USERBIRTH, birth)
+                putExtra(USERTYPE, userType)
             }
             startActivity(intent)
         }
         else if (userType == "CareGiver") {
-            var intent = Intent(this, careGiverHome::class.java)
+            var intent = Intent(this, careGiverHome::class.java).apply {
+                putExtra(USERUID, uid)
+                putExtra(USERNICKNAME, nickName)
+                putExtra(USERFULLNAME, fullName)
+                putExtra(USEREMAIL, email)
+                putExtra(USERPW, password)
+                putExtra(USERBIRTH, birth)
+                putExtra(USERTYPE, userType)
+            }
             startActivity(intent)
         }
     }
