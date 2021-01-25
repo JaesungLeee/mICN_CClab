@@ -8,7 +8,7 @@
     tools:context=".UI.patient.patientContents">
 
     <View
-        android:id="@+id/view9"
+        android:id="@+id/view11"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="@color/Pantoneblue"
@@ -22,26 +22,26 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center_horizontal"
-        android:text="See My Doctors"
+        android:text="See My Patients"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="32sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/view9"
-        app:layout_constraintStart_toStartOf="@id/view9"
-        app:layout_constraintTop_toTopOf="@+id/view9" />
+        app:layout_constraintEnd_toEndOf="@+id/view11"
+        app:layout_constraintStart_toStartOf="@id/view11"
+        app:layout_constraintTop_toTopOf="@+id/view11" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view9">
+        app:layout_constraintTop_toBottomOf="@+id/view11">
 
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/myDoctors_rV"
+            android:id="@+id/myPatients_rV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"

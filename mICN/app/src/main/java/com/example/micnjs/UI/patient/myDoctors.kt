@@ -1,4 +1,4 @@
-package com.example.micnjs.UI
+package com.example.micnjs.UI.patient
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

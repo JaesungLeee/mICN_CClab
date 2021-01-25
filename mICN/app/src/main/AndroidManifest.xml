@@ -20,16 +20,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MICN">
-        <activity android:name=".UI.myReports"></activity>
-        <activity android:name=".UI.myDoctors" />
-        <activity android:name=".UI.contents" />
-        <activity android:name=".UI.retrieveInfo" />
+        <activity android:name=".UI.careGiver.careGiverContents"></activity>
+        <activity android:name=".UI.careGiver.careGiverRetrieveInfo" />
+        <activity android:name=".UI.careGiver.careGiverReports" />
+        <activity android:name=".UI.careGiver.myPatients" />
+        <activity android:name=".UI.patient.patientReports" />
+        <activity android:name=".UI.patient.myDoctors" />
+        <activity android:name=".UI.patient.patientContents" />
+        <activity android:name=".UI.patient.patientRetrieveInfo" />
         <activity android:name=".UI.emergency" />
         <activity android:name=".UI.profile" />
-        <activity android:name=".UI.careGiverHome" />
-        <activity android:name=".UI.patientHome" />
-        <activity android:name=".UI.signup" />
-        <activity android:name=".UI.login">
+        <activity android:name=".UI.careGiver.careGiverHome" />
+        <activity android:name=".UI.patient.patientHome" />
+        <activity android:name=".UI.auth.signup" />
+        <activity android:name=".UI.auth.login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

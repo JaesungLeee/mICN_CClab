@@ -1,4 +1,4 @@
-package com.example.micnjs.UI
+package com.example.micnjs.UI.auth
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,8 +6,10 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.example.micnjs.R
-import com.example.micnjs.careGiver
-import com.example.micnjs.patient
+import com.example.micnjs.UI.careGiver.careGiverHome
+import com.example.micnjs.UI.patient.patientHome
+import com.example.micnjs.firebaseDB.careGiver
+import com.example.micnjs.firebaseDB.patient
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_signup.*
@@ -85,12 +87,18 @@ class signup : AppCompatActivity() {
         Log.e("CREATEDB", "cccc")
         if (user == "Patient") {
             db.reference.child("Patient").child(uid).setValue(
-                patient(uid, name, email, password, birth)
+                patient(
+                    uid,
+                    name,
+                    email,
+                    password,
+                    birth
+                )
             )
         }
         else if (user == "CareGiver") {
             db.reference.child("CareGiver").child(uid).setValue(
-                careGiver(uid, name, email, password, birth)
+                    careGiver(uid, name, email, password, birth)
             )
         }
 

@@ -1,6 +1,5 @@
-package com.example.micnjs.UI
+package com.example.micnjs.UI.patient
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.net.ConnectivityManager
@@ -8,25 +7,21 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
-import android.util.Log
 import android.widget.Toast
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.OrientationHelper
 import com.example.micnjs.R
-import com.example.micnjs.adapters.contentsAdapter
+import com.example.micnjs.adapters.patientContentsAdapter
 import com.example.micnjs.download.checkSDCard
-import com.example.micnjs.models.contentsModel
-import kotlinx.android.synthetic.main.activity_contents.*
+import com.example.micnjs.models.patientContentsModel
+import kotlinx.android.synthetic.main.activity_patient_contents.*
 import java.io.File
-import java.util.ArrayList
 
-class contents : AppCompatActivity() {
+class patientContents : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_contents)
+        setContentView(R.layout.activity_patient_contents)
 
 //        val contentsList : ArrayList<String> = ArrayList()
 //
@@ -45,14 +40,14 @@ class contents : AppCompatActivity() {
 //        Log.d("CHECK", cNameList.toString())
 
 
-        val cNameList = arrayListOf<contentsModel>(
-                contentsModel("pdf"),
-                contentsModel("pdf")
+        val cNameList = arrayListOf<patientContentsModel>(
+                patientContentsModel("pdf"),
+                patientContentsModel("pdf")
         )
 
-        contents_rV.layoutManager = LinearLayoutManager(this)
-        contents_rV.setHasFixedSize(true)
-        contents_rV.adapter = contentsAdapter(cNameList)
+        patientContents_rV.layoutManager = LinearLayoutManager(this)
+        patientContents_rV.setHasFixedSize(true)
+        patientContents_rV.adapter = patientContentsAdapter(cNameList)
 
         isConnectingToInternet()
 

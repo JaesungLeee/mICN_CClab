@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.careGiverHome">
+    tools:context=".UI.careGiver.careGiverHome">
 
     <View
         android:id="@+id/view4"
@@ -83,10 +83,12 @@
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/updateProfile_btn">
+        app:layout_constraintTop_toBottomOf="@id/updateProfile_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
 
         <Button
-            android:id="@+id/patients_btn"
+            android:id="@+id/cPatients_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -98,7 +100,7 @@
             android:background="@drawable/rectangle_violet_btn"/>
 
         <Button
-            android:id="@+id/reports_btn"
+            android:id="@+id/cReports_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -120,7 +122,9 @@
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/checkMy_lLayout">
+        app:layout_constraintTop_toBottomOf="@id/checkMy_lLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
 
         <Button
             android:id="@+id/retreiveInfo_btn"

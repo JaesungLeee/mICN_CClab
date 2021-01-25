@@ -1,27 +1,22 @@
 package com.example.micnjs.adapters
 
-import android.content.Context
-import android.net.ConnectivityManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import android.widget.Toast
-import androidx.core.content.ContextCompat.getSystemService
 import androidx.recyclerview.widget.RecyclerView
 import com.example.micnjs.R
-import com.example.micnjs.UI.contents
+import com.example.micnjs.UI.patient.patientContents
 import com.example.micnjs.download.downloadContents
 import com.example.micnjs.download.urls
-import com.example.micnjs.models.contentsModel
-import kotlinx.android.synthetic.main.contents_layout.view.*
-import kotlin.coroutines.coroutineContext
+import com.example.micnjs.models.patientContentsModel
+import kotlinx.android.synthetic.main.patient_contents_layout.view.*
 
-class contentsAdapter(val contentsName: ArrayList<contentsModel>) : RecyclerView.Adapter<contentsAdapter.ViewHolder>() {
+class patientContentsAdapter(val patientContentsName: ArrayList<patientContentsModel>) : RecyclerView.Adapter<patientContentsAdapter.ViewHolder>() {
 
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
 
-        fun bindItems(data : contentsModel) {
+        fun bindItems(data : patientContentsModel) {
             itemView.contentName_tV.text = data.content
         }
 
@@ -35,21 +30,21 @@ class contentsAdapter(val contentsName: ArrayList<contentsModel>) : RecyclerView
         }
 
         private fun downloadPdf() {
-            downloadContents(context = contents().applicationContext, downloadURL = urls().pdfUrl)
+            downloadContents(context = patientContents().applicationContext, downloadURL = urls().pdfUrl)
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.contents_layout, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.patient_contents_layout, parent, false)
         return ViewHolder(view)
     }
 
     override fun getItemCount(): Int {
-        return contentsName.size
+        return patientContentsName.size
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bindItems(contentsName[position])
+        holder.bindItems(patientContentsName[position])
     }
 
 }
