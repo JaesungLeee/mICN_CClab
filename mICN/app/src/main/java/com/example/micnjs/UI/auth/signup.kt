@@ -8,12 +8,24 @@ import android.widget.Toast
 import com.example.micnjs.R
 import com.example.micnjs.UI.careGiver.careGiverHome
 import com.example.micnjs.UI.patient.patientHome
+import com.example.micnjs.firebaseDB.user
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_signup.*
 
 class signup : AppCompatActivity() {
+
+    companion object {
+        private var USERUID = "USERUID"
+        private var USERNICKNAME = "USERNICKNAME"
+        private var USERFULLNAME = "USERFULLNAME"
+        private var USEREMAIL = "USEREMAIL"
+        private var USERPW = "USERPW"
+        private var USERBIRTH = "USERBIRTH"
+        private var USERTYPE = "USERTYPE"
+    }
+
     lateinit var auth : FirebaseAuth     // Firebase Authentication
     var databaseReference : DatabaseReference? = null
     var database : FirebaseDatabase? = null
@@ -60,10 +72,10 @@ class signup : AppCompatActivity() {
     }
 
     private fun createUser(email: String, password: String, userType: String) {
-        var uid = ""  //auth.uid.toString()
-        var fullName = editName.text.toString()
+        var uid = ""
+        var nickName = editNickName.text.toString()
         var birth = ""
-        var nickName = ""
+        var fullName = ""
 
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
@@ -83,27 +95,33 @@ class signup : AppCompatActivity() {
             }
     }
 
-    fun createDB(uid: String, nickName: String, fullName : String, email: String, password: String, birth: String, userType : String) {
+    private fun createDB(uid: String, nickName: String, fullName : String, email: String, password: String, birth: String, userType : String) {
         Log.e("CREATEDB", "cccc")
 
         if (userType == "Patient") {
             val currentUserDB = databaseReference?.child(uid)
-            currentUserDB?.setValue(patient(uid, nickName, fullName, email, password, birth, userType))
+            currentUserDB?.setValue(user(uid, nickName, fullName, email, password, birth, userType))
+
+            Log.e("CHECK", "${uid}, ${nickName}, ${fullName}, ${email}, ${password}, ${birth}, ${userType}")
         }
         else if (userType == "CareGiver") {
             val currentUserDB = databaseReference?.child(uid)
-            currentUserDB?.setValue(careGiver(uid, nickName, fullName, email, password, birth, userType))
+            currentUserDB?.setValue(user(uid, nickName, fullName, email, password, birth, userType))
+
+            Log.e("CHECK", "${uid}, ${nickName}, ${fullName}, ${email}, ${password}, ${birth}, ${userType}")
         }
 
-        homePage(userType)
+        movePage(userType)
     }
 
-    fun homePage(user : String) {
-        if (user == "Patient") {
-            var intent = Intent(this, patientHome::class.java)
+    private fun movePage(userType : String) {
+        if (userType == "Patient") {
+            var intent = Intent(this, patientHome::class.java).apply {
+
+            }
             startActivity(intent)
         }
-        else if (user == "CareGiver") {
+        else if (userType == "CareGiver") {
             var intent = Intent(this, careGiverHome::class.java)
             startActivity(intent)
         }

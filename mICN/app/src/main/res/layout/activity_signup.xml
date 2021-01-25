@@ -58,13 +58,13 @@
                     android:layout_marginRight="32dp">
 
                     <EditText
-                        android:id="@+id/editName"
+                        android:id="@+id/editNickName"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:drawableLeft="@drawable/name"
                         android:drawablePadding="16dp"
-                        android:hint="Name"
+                        android:hint="Nickname"
                         android:inputType="text" />
 
                 </com.google.android.material.textfield.TextInputLayout>

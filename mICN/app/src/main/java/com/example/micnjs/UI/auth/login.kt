@@ -15,17 +15,18 @@ import kotlinx.android.synthetic.main.activity_login.*
 
 class login : AppCompatActivity() {
     companion object {
-        private var username = "USERNAME"
-        private var userpw = "USERPW"
-        private var userbirth = "USERBIRTH"
-        private var useruid = "USERUID"
+        private var USERUID = "USERUID"
+        private var USERNICKNAME = "USERNICKNAME"
+        private var USERFULLNAME = "USERFULLNAME"
+        private var USEREMAIL = "USEREMAIL"
+        private var USERPW = "USERPW"
+        private var USERBIRTH = "USERBIRTH"
+        private var USERTYPE = "USERTYPE"
     }
 
     lateinit var auth : FirebaseAuth     // Firebase Authentication
     var databaseReference : DatabaseReference? = null
     var database : FirebaseDatabase? = null
-
-    private var Flag : Int = 0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,7 +35,7 @@ class login : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
         database = FirebaseDatabase.getInstance()
-        databaseReference = database?.reference!!.child("Patient")
+        databaseReference = database?.reference!!.child("User")
 
         val currentUser = auth.currentUser
 
@@ -85,20 +86,23 @@ class login : AppCompatActivity() {
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (snapshot.child("userType").value.toString() == "Patient") {
                     val enterUserType = "Patient"
-                    val name = snapshot.child("patientName").value.toString()
-                    val password = snapshot.child("patientPW").value.toString()
-                    val birth = snapshot.child("patientBirth").value.toString()
+                    val nickName = snapshot.child("nickName").value.toString()
+                    val password = snapshot.child("password").value.toString()
+                    val birth = snapshot.child("birth").value.toString()
+                    val fullName = snapshot.child("fullName").value.toString()
+                    val email = snapshot.child("email").value.toString()
 
-                    movePage(enterUserType, name, password, birth, uid)
+                    movePage(enterUserType, nickName, fullName, email, password, birth, uid)
                 }
-                else {
-                    databaseReference = database?.reference!!.child("CareGiver")
-                    queryDB(currentUser)
-                    if (snapshot.child("userType").value.toString() == "CareGiver")
-
-
+                else if (snapshot.child("userType").value.toString() == "CareGiver") {
                     val enterUserType = "CareGiver"
-                    movePage(enterUserType, name, password, birth, uid)
+                    val nickName = snapshot.child("nickName").value.toString()
+                    val password = snapshot.child("password").value.toString()
+                    val birth = snapshot.child("birth").value.toString()
+                    val fullName = snapshot.child("fullName").value.toString()
+                    val email = snapshot.child("email").value.toString()
+
+                    movePage(enterUserType, nickName, fullName, email, password, birth, uid)
                 }
             }
 
@@ -106,19 +110,30 @@ class login : AppCompatActivity() {
 
     }
 
-    private fun movePage(enterUserType : String, name: String, password: String, birth: String, uid: String) {
+    private fun movePage(enterUserType : String, nickName: String, fullName : String, email : String, password: String, birth: String, uid: String) {
         if (enterUserType == "Patient") {
             var intent = Intent(this, patientHome::class.java).apply {
-                putExtra(username, name)
-                putExtra(userpw, password)
-                putExtra(userbirth, birth)
-                putExtra(useruid, uid)
+                putExtra(USERUID, uid)
+                putExtra(USERNICKNAME, nickName)
+                putExtra(USERFULLNAME, fullName)
+                putExtra(USEREMAIL, email)
+                putExtra(USERPW, password)
+                putExtra(USERBIRTH, birth)
+                putExtra(USERTYPE, enterUserType)
             }
             startActivity(intent)
             finish()
         }
         else if (enterUserType == "CareGiver") {
-            var intent = Intent(this, careGiverHome::class.java)
+            var intent = Intent(this, careGiverHome::class.java).apply {
+                putExtra(USERUID, uid)
+                putExtra(USERNICKNAME, nickName)
+                putExtra(USERFULLNAME, fullName)
+                putExtra(USEREMAIL, email)
+                putExtra(USERPW, password)
+                putExtra(USERBIRTH, birth)
+                putExtra(USERTYPE, enterUserType)
+            }
             startActivity(intent)
             finish()
         }
