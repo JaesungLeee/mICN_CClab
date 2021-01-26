@@ -33,39 +33,57 @@ class patientReports : AppCompatActivity() {
             "Lee",
             "Dr.Kim",
             "Hostpital A"
-        )
-        )
-
-        reportsList.add(patientReportsModel(
-            "Lee",
-            "Dr.Kim",
-            "Hostpital A"
-        ))
-
-        reportsList.add(patientReportsModel(
-            "Lee",
-            "Dr.Kim",
-            "Hostpital A"
-        ))
-
-        reportsList.add(
-            patientReportsModel(
-                "Lee",
-                "Dr.Kim",
-                "Hostpital A"
             )
         )
 
-        reportsList.add(patientReportsModel(
+        reportsList.add(
+            patientReportsModel(
             "Lee",
             "Dr.Kim",
             "Hostpital A"
-        ))
-
-        reportsList.add(patientReportsModel(
+            )
+        )
+        reportsList.add(
+            patientReportsModel(
             "Lee",
             "Dr.Kim",
             "Hostpital A"
-        ))
+            )
+        )
+        reportsList.add(
+            patientReportsModel(
+            "Lee",
+            "Dr.Kim",
+            "Hostpital A"
+            )
+        )
+        reportsList.add(
+            patientReportsModel(
+            "Lee",
+            "Dr.Kim",
+            "Hostpital A"
+            )
+        )
+        reportsList.add(
+            patientReportsModel(
+            "Lee",
+            "Dr.Kim",
+            "Hostpital A"
+            )
+        )
+        reportsList.add(
+            patientReportsModel(
+            "Lee",
+            "Dr.Kim",
+            "Hostpital A"
+            )
+        )
+        reportsList.add(
+            patientReportsModel(
+            "Lee",
+            "Dr.Kim",
+            "Hostpital A"
+            )
+        )
     }
 }

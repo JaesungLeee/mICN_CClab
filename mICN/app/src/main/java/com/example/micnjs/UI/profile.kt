@@ -7,6 +7,17 @@ import com.example.micnjs.R
 import kotlinx.android.synthetic.main.activity_profile.*
 
 class profile : AppCompatActivity() {
+
+    companion object {
+        private var USERUID = "USERUID"
+        private var USERNICKNAME = "USERNICKNAME"
+        private var USERFULLNAME = "USERFULLNAME"
+        private var USEREMAIL = "USEREMAIL"
+        private var USERPW = "USERPW"
+        private var USERBIRTH = "USERBIRTH"
+        private var USERTYPE = "USERTYPE"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)

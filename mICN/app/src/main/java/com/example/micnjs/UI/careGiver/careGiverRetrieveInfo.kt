@@ -9,6 +9,7 @@ import com.example.micnjs.UI.patient.patientContents
 import kotlinx.android.synthetic.main.activity_care_giver_retrieve_info.*
 
 class careGiverRetrieveInfo : AppCompatActivity() {
+    //List of Servers 3개 -> 랜덤하게 콘텐츠 개수 보여주기
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_care_giver_retrieve_info)

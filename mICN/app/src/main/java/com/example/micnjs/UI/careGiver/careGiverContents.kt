@@ -9,6 +9,7 @@ import com.example.micnjs.RVmodels.careGiverContentsModel
 import kotlinx.android.synthetic.main.activity_care_giver_contents.*
 
 class careGiverContents : AppCompatActivity() {
+    //난수
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_care_giver_contents)
