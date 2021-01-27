@@ -73,7 +73,7 @@ class careGiverHome : AppCompatActivity() {
         }
 
         retreiveInfo_btn.setOnClickListener {
-            val intent = Intent(this, patientRetrieveInfo::class.java)
+            val intent = Intent(this, careGiverRetrieveInfo::class.java)
             startActivity(intent)
         }
 

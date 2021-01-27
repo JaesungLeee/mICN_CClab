@@ -30,59 +30,67 @@
         app:layout_constraintStart_toStartOf="@id/view14"
         app:layout_constraintTop_toTopOf="@+id/view14" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
+    <TextView
+        android:id="@+id/server_tV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="3 available servers.."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/Pantoneblue"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/view14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/server_lLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="100dp"
         android:layout_marginRight="32dp"
         android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/server_tV"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view14">
+        app:layout_constraintRight_toRightOf="parent">
 
         <Button
-            android:id="@+id/connectServer_btn"
+            android:id="@+id/server1_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/round_pantoneblue_btn"
-            android:text="Connect to a Server"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
+            android:text="Server 1"
             android:textSize="22sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/connectServer_tV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="60dp"
-            android:text="Connected with Server {Type Of PC}"
-            android:textAlignment="center"
-            android:textColor="@color/Pantoneblue"
-            android:textSize="15sp"
             android:textStyle="bold"
-            android:visibility="invisible" />
-
+            android:textColor="@color/white"
+            android:background="@drawable/round_pantoneblue_btn"/>
 
         <Button
-            android:id="@+id/contents_btn"
+            android:id="@+id/server2_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="80dp"
-            android:layout_marginRight="32dp"
-            android:background="@drawable/round_warmtone_btn"
-            android:text="Show All Contents"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="18sp"
+            android:layout_marginTop="50dp"
+            android:text="Server 2"
+            android:textSize="22sp"
             android:textStyle="bold"
-            android:visibility="invisible" />
+            android:textColor="@color/white"
+            android:background="@drawable/round_pantoneblue_btn"/>
+
+        <Button
+            android:id="@+id/server3_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Server 3"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/round_pantoneblue_btn"/>
 
     </LinearLayout>
+
+
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
