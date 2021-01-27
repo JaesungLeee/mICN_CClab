@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.micnjs.R
 import com.example.micnjs.RVmodels.careGiverReportsModel
-import kotlinx.android.synthetic.main.patient_reports_layout.view.*
+import kotlinx.android.synthetic.main.care_giver_reports_layout.view.*
 
 class careGiverReportsAdapter(val reportsList : List<careGiverReportsModel>) : RecyclerView.Adapter<careGiverReportsAdapter.ViewHolder>(){
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
