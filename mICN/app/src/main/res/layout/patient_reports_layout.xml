@@ -16,10 +16,10 @@
         android:padding="8dp" >
 
         <TextView
-            android:id="@+id/patientName_tV"
+            android:id="@+id/reportsNumber_tV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Patient Name"
+            android:text="Reports #"
             android:textColor="@color/black"
             android:textSize="22sp"
             android:padding="16dp" />
@@ -31,10 +31,10 @@
             android:visibility="visible" >
 
             <TextView
-                android:id="@+id/expand_patientName_tV"
+                android:id="@+id/expand_reportsNumber_tV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Patient Name"
+                android:text="Reports #"
                 android:textColor="@color/ash"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -49,7 +49,7 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:padding="16dp"
-                android:layout_below="@id/expand_patientName_tV" />
+                android:layout_below="@id/expand_reportsNumber_tV" />
 
             <TextView
                 android:id="@+id/expand_hospitalName_tV"

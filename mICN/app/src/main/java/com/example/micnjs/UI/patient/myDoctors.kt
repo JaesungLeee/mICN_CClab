@@ -14,18 +14,10 @@ class myDoctors : AppCompatActivity() {
         setContentView(R.layout.activity_my_doctors)
 
         val doctorList = arrayListOf<myDoctorsModel>(
-            myDoctorsModel("Lee"),
-            myDoctorsModel("Park"),
-            myDoctorsModel("Kim"),
-            myDoctorsModel("Lee"),
-            myDoctorsModel("Park"),
-            myDoctorsModel("Kim"),
-            myDoctorsModel("Lee"),
-            myDoctorsModel("Park"),
-            myDoctorsModel("Kim"),
-            myDoctorsModel("Lee"),
-            myDoctorsModel("Park"),
-            myDoctorsModel("Kim")
+                myDoctorsModel("Dr. Eun; Family Physician"),
+                myDoctorsModel("Dr. Park; Dermatologist"),
+                myDoctorsModel("Dr. Kim; Surgeon"),
+                myDoctorsModel("Dr. Min; Pediatrician")
         )
 
         myDoctors_rV.layoutManager = LinearLayoutManager(this)

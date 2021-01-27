@@ -30,60 +30,27 @@ class patientReports : AppCompatActivity() {
     private fun initData() {
         reportsList.add(
             patientReportsModel(
-            "Lee",
-            "Dr.Kim",
-            "Hostpital A"
+            "Report 1",
+            "Doctor: Dr. Eun",
+            "Hospital A"
             )
         )
 
         reportsList.add(
             patientReportsModel(
-            "Lee",
-            "Dr.Kim",
-            "Hostpital A"
+            "Report 2",
+            "Doctor: Dr. Kim",
+            "Hostpital B"
             )
         )
+
         reportsList.add(
             patientReportsModel(
-            "Lee",
-            "Dr.Kim",
+            "Report 3",
+            "Doctor: Dr. Park",
             "Hostpital A"
             )
         )
-        reportsList.add(
-            patientReportsModel(
-            "Lee",
-            "Dr.Kim",
-            "Hostpital A"
-            )
-        )
-        reportsList.add(
-            patientReportsModel(
-            "Lee",
-            "Dr.Kim",
-            "Hostpital A"
-            )
-        )
-        reportsList.add(
-            patientReportsModel(
-            "Lee",
-            "Dr.Kim",
-            "Hostpital A"
-            )
-        )
-        reportsList.add(
-            patientReportsModel(
-            "Lee",
-            "Dr.Kim",
-            "Hostpital A"
-            )
-        )
-        reportsList.add(
-            patientReportsModel(
-            "Lee",
-            "Dr.Kim",
-            "Hostpital A"
-            )
-        )
+
     }
 }

@@ -14,8 +14,8 @@ import kotlinx.android.synthetic.main.patient_reports_layout.view.*
 class patientReportsAdapter(val reportsList : List<patientReportsModel>) : RecyclerView.Adapter<patientReportsAdapter.ViewHolder>() {
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
 
-        var patientName : TextView = itemView.patientName_tV
-        var ePatientName : TextView = itemView.expand_patientName_tV
+        var reportsNumber : TextView = itemView.reportsNumber_tV
+        var ePatientName : TextView = itemView.expand_reportsNumber_tV
         var eDoctorName : TextView = itemView.expand_doctorName_tV
         var eHospitalName : TextView = itemView.expand_hospitalName_tV
         var linearLayout : LinearLayout = itemView.linearLayout
@@ -34,8 +34,8 @@ class patientReportsAdapter(val reportsList : List<patientReportsModel>) : Recyc
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val reports : patientReportsModel = reportsList[position]
-        holder.patientName.text = reports.patientName
-        holder.ePatientName.text = reports.patientName
+        holder.reportsNumber.text = reports.reportsNumber
+        holder.ePatientName.text = reports.reportsNumber
         holder.eDoctorName.text = reports.doctorName
         holder.eHospitalName.text = reports.hospitalName
 
