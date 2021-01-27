@@ -7,8 +7,6 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.micnjs.R
 import com.example.micnjs.UI.patient.patientContents
-import com.example.micnjs.download.downloadContents
-import com.example.micnjs.download.urls
 import com.example.micnjs.RVmodels.patientContentsModel
 import kotlinx.android.synthetic.main.patient_contents_layout.view.*
 

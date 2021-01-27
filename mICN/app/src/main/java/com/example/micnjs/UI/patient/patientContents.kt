@@ -11,7 +11,6 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.micnjs.R
 import com.example.micnjs.RVadapters.patientContentsAdapter
-import com.example.micnjs.download.checkSDCard
 import com.example.micnjs.RVmodels.patientContentsModel
 import kotlinx.android.synthetic.main.activity_patient_contents.*
 import java.io.File
