@@ -3,9 +3,10 @@ package com.example.micnjs.UI.careGiver
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import com.example.micnjs.R
-import com.example.micnjs.UI.patient.patientContents
+import com.example.micnjs.UI.careGiver.contents.server1Contents
+import com.example.micnjs.UI.careGiver.contents.server2Contents
+import com.example.micnjs.UI.careGiver.contents.server3Contents
 import kotlinx.android.synthetic.main.activity_care_giver_retrieve_info.*
 
 class careGiverRetrieveInfo : AppCompatActivity() {
@@ -15,18 +16,22 @@ class careGiverRetrieveInfo : AppCompatActivity() {
         setContentView(R.layout.activity_care_giver_retrieve_info)
 
         server1_btn.setOnClickListener {
-            var intent = Intent(this, careGiverContents::class.java)
+            var intent = Intent(this, server1Contents::class.java)
             startActivity(intent)
         }
 
         server2_btn.setOnClickListener {
-            var intent = Intent(this, careGiverContents::class.java)
+            var intent = Intent(this, server2Contents::class.java)
             startActivity(intent)
         }
 
         server3_btn.setOnClickListener {
-            var intent = Intent(this, careGiverContents::class.java)
+            var intent = Intent(this, server3Contents::class.java)
             startActivity(intent)
+        }
+
+        moveBack_btn.setOnClickListener {
+            finish()
         }
     }
 }

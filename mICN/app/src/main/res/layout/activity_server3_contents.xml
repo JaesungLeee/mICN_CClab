@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.patient.patientContents">
+    tools:context=".UI.careGiver.contents.server3Contents">
 
     <View
         android:id="@+id/view13"
@@ -51,7 +50,7 @@
     <LinearLayout
         android:id="@+id/scroll_lLaout"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="350dp"
         android:layout_marginTop="10dp"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -68,7 +67,7 @@
                 android:orientation="vertical" >
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/content1_cV"
+                    android:id="@+id/s3c1_cV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -83,7 +82,7 @@
                         android:padding="24dp" >
 
                         <Button
-                            android:id="@+id/content1Download_btn"
+                            android:id="@+id/s3c1Download_btn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Download"
@@ -95,10 +94,10 @@
 
 
                         <TextView
-                            android:id="@+id/content1Name_tV"
+                            android:id="@+id/s3c1Name_tV"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_toRightOf="@+id/content1Download_btn"
+                            android:layout_toRightOf="@+id/s3c1Download_btn"
                             android:layout_marginLeft="15dp"
                             android:text="contentsName"
                             android:textColor="@color/Pantoneblue"
@@ -108,7 +107,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/content2_cV"
+                    android:id="@+id/s3c2_cV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -123,7 +122,7 @@
                         android:padding="24dp" >
 
                         <Button
-                            android:id="@+id/content2Download_btn"
+                            android:id="@+id/s3c2Download_btn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Download"
@@ -135,10 +134,10 @@
 
 
                         <TextView
-                            android:id="@+id/content2Name_tV"
+                            android:id="@+id/s3c2Name_tV"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_toRightOf="@+id/content2Download_btn"
+                            android:layout_toRightOf="@+id/s3c2Download_btn"
                             android:layout_marginLeft="15dp"
                             android:text="contentsName"
                             android:textColor="@color/Pantoneblue"
@@ -148,7 +147,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/content3_cV"
+                    android:id="@+id/s3c3_cV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -163,7 +162,7 @@
                         android:padding="24dp" >
 
                         <Button
-                            android:id="@+id/content3Download_btn"
+                            android:id="@+id/s3c3Download_btn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Download"
@@ -175,10 +174,10 @@
 
 
                         <TextView
-                            android:id="@+id/content3Name_tV"
+                            android:id="@+id/s3c3Name_tV"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_toRightOf="@+id/content3Download_btn"
+                            android:layout_toRightOf="@+id/s3c3Download_btn"
                             android:layout_marginLeft="15dp"
                             android:text="contentsName"
                             android:textColor="@color/Pantoneblue"
@@ -188,7 +187,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/content4_cV"
+                    android:id="@+id/s3c4_cV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -203,7 +202,7 @@
                         android:padding="24dp" >
 
                         <Button
-                            android:id="@+id/content4Download_btn"
+                            android:id="@+id/s3c4Download_btn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Download"
@@ -215,10 +214,10 @@
 
 
                         <TextView
-                            android:id="@+id/content4Name_tV"
+                            android:id="@+id/s3c4Name_tV"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_toRightOf="@+id/content4Download_btn"
+                            android:layout_toRightOf="@+id/s3c4Download_btn"
                             android:layout_marginLeft="15dp"
                             android:text="contentsName"
                             android:textColor="@color/Pantoneblue"
@@ -228,7 +227,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/content5_cV"
+                    android:id="@+id/s3c5_cV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -243,7 +242,7 @@
                         android:padding="24dp" >
 
                         <Button
-                            android:id="@+id/content5Download_btn"
+                            android:id="@+id/s3c5Download_btn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Download"
@@ -255,10 +254,10 @@
 
 
                         <TextView
-                            android:id="@+id/content5Name_tV"
+                            android:id="@+id/s3c5Name_tV"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_toRightOf="@+id/content5Download_btn"
+                            android:layout_toRightOf="@+id/s3c5Download_btn"
                             android:layout_marginLeft="15dp"
                             android:text="contentsName"
                             android:textColor="@color/Pantoneblue"
@@ -267,205 +266,7 @@
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/content6_cV"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="32dp"
-                    android:layout_marginRight="32dp"
-                    android:focusable="true"
-                    app:cardCornerRadius="10dp" >
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="24dp" >
-
-                        <Button
-                            android:id="@+id/content6Download_btn"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Download"
-                            android:textSize="12sp"
-                            android:textColor="@color/white"
-                            android:backgroundTint="@color/Pantoneblue"
-                            android:drawableLeft="@drawable/ic_download"
-                            android:drawablePadding="5dp"/>
-
-
-                        <TextView
-                            android:id="@+id/content6name_tV"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_toRightOf="@+id/content6Download_btn"
-                            android:layout_marginLeft="15dp"
-                            android:text="contentsName"
-                            android:textColor="@color/Pantoneblue"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/content7_cV"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="32dp"
-                    android:layout_marginRight="32dp"
-                    android:focusable="true"
-                    app:cardCornerRadius="10dp" >
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="24dp" >
-
-                        <Button
-                            android:id="@+id/content7Download_btn"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Download"
-                            android:textSize="12sp"
-                            android:textColor="@color/white"
-                            android:backgroundTint="@color/Pantoneblue"
-                            android:drawableLeft="@drawable/ic_download"
-                            android:drawablePadding="5dp"/>
-
-
-                        <TextView
-                            android:id="@+id/content7Name_tV"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_toRightOf="@+id/content7Download_btn"
-                            android:layout_marginLeft="15dp"
-                            android:text="contentsName"
-                            android:textColor="@color/Pantoneblue"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/content8_cV"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="32dp"
-                    android:layout_marginRight="32dp"
-                    android:focusable="true"
-                    app:cardCornerRadius="10dp" >
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="24dp" >
-
-                        <Button
-                            android:id="@+id/content8Download_btn"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Download"
-                            android:textSize="12sp"
-                            android:textColor="@color/white"
-                            android:backgroundTint="@color/Pantoneblue"
-                            android:drawableLeft="@drawable/ic_download"
-                            android:drawablePadding="5dp"/>
-
-
-                        <TextView
-                            android:id="@+id/content8Name_tV"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_toRightOf="@+id/content8Download_btn"
-                            android:layout_marginLeft="15dp"
-                            android:text="contentsName"
-                            android:textColor="@color/Pantoneblue"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/content9_cV"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="32dp"
-                    android:layout_marginRight="32dp"
-                    android:focusable="true"
-                    app:cardCornerRadius="10dp" >
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="24dp" >
-
-                        <Button
-                            android:id="@+id/content9Download_btn"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Download"
-                            android:textSize="12sp"
-                            android:textColor="@color/white"
-                            android:backgroundTint="@color/Pantoneblue"
-                            android:drawableLeft="@drawable/ic_download"
-                            android:drawablePadding="5dp"/>
-
-
-                        <TextView
-                            android:id="@+id/content9Name_tV"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_toRightOf="@+id/content9Download_btn"
-                            android:layout_marginLeft="15dp"
-                            android:text="contentsName"
-                            android:textColor="@color/Pantoneblue"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/content10_cV"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="32dp"
-                    android:layout_marginRight="32dp"
-                    android:focusable="true"
-                    app:cardCornerRadius="10dp">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="24dp" >
-
-                        <Button
-                            android:id="@+id/content10Download_btn"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Download"
-                            android:textSize="12sp"
-                            android:textColor="@color/white"
-                            android:backgroundTint="@color/Pantoneblue"
-                            android:drawableLeft="@drawable/ic_download"
-                            android:drawablePadding="5dp"/>
-
-
-                        <TextView
-                            android:id="@+id/content10Name_tV"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_toRightOf="@+id/content10Download_btn"
-                            android:layout_marginLeft="15dp"
-                            android:text="contentsName"
-                            android:textColor="@color/Pantoneblue"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
@@ -474,7 +275,7 @@
         android:id="@+id/downloadFolder_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:text="Open Download Folder"
@@ -487,5 +288,20 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/moveBack_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/white"
+        android:backgroundTint="@color/Pantoneblue"
+        app:srcCompat="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="VectorDrawableCompat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

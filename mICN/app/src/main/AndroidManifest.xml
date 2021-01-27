@@ -17,7 +17,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MICN">
-        <activity android:name=".UI.careGiver.careGiverContents"></activity>
+        <activity android:name=".UI.careGiver.contents.server3Contents"></activity>
+        <activity android:name=".UI.careGiver.contents.server2Contents" />
+        <activity android:name=".UI.careGiver.contents.server1Contents" />
         <activity android:name=".UI.careGiver.careGiverRetrieveInfo" />
         <activity android:name=".UI.careGiver.careGiverReports" />
         <activity android:name=".UI.careGiver.myPatients" />
