@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">mICN</string>
+    <string name="task1"><u>aaaaa</u></string>
+    <string name="task2"><u>task2</u></string>
 </resources>

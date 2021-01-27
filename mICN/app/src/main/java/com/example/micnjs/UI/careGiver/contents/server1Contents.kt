@@ -3,6 +3,7 @@ package com.example.micnjs.UI.careGiver.contents
 import android.Manifest
 import android.app.DownloadManager
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
@@ -11,6 +12,7 @@ import android.os.Bundle
 import android.os.Environment
 import android.widget.Toast
 import com.example.micnjs.R
+import com.example.micnjs.UI.careGiver.downloadFolder
 import kotlinx.android.synthetic.main.activity_server1_contents.*
 
 class server1Contents : AppCompatActivity() {
@@ -39,8 +41,9 @@ class server1Contents : AppCompatActivity() {
             checkVersion(url)
         }
 
-        downloadFolder_btn.setOnClickListener {
-//            openDownloadedFolder()
+        downloadFolder_btn.setOnClickListener{
+            var intent = Intent(this, downloadFolder::class.java)
+            startActivity(intent)
         }
 
         moveBack_btn.setOnClickListener {
