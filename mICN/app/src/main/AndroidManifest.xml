@@ -26,7 +26,6 @@
         <activity android:name=".UI.careGiver.myPatients" />
         <activity android:name=".UI.patient.patientReports" />
         <activity android:name=".UI.patient.myDoctors" />
-        <activity android:name=".UI.patient.patientContents" />
         <activity android:name=".UI.patient.patientRetrieveInfo" />
         <activity android:name=".UI.emergency" />
         <activity android:name=".UI.profile" />

@@ -14,21 +14,11 @@ class myPatients : AppCompatActivity() {
         setContentView(R.layout.activity_my_patients)
 
         val patientList = arrayListOf(
-            myPatientsModel("Lee"),
-            myPatientsModel("Park"),
-            myPatientsModel("Kim"),
-            myPatientsModel("Jeong"),
-            myPatientsModel("Hong"),
-            myPatientsModel("Lee"),
-            myPatientsModel("Park"),
-            myPatientsModel("Kim"),
-            myPatientsModel("Jeong"),
-            myPatientsModel("Hong"),
-            myPatientsModel("Lee"),
-            myPatientsModel("Park"),
-            myPatientsModel("Kim"),
-            myPatientsModel("Jeong"),
-            myPatientsModel("Hong")
+                myPatientsModel("Mr. Seo-jun; 24 yr; Ansan"),
+                myPatientsModel("Mrs. Ha-eun; 56 yr; Anseong"),
+                myPatientsModel("Ms. Soo-ah; 19 yr; Gimpo"),
+                myPatientsModel("Mr. Ye-jun; 35 yr; Hanam"),
+                myPatientsModel("Mr. Lee; 30 yr; Yongin")
         )
 
         myPatients_rV.layoutManager = LinearLayoutManager(this)

@@ -27,17 +27,17 @@ class server1Contents : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_server1_contents)
 
-        buttonClickListner()
+        buttonClickListener()
 
     }
 
-    private fun buttonClickListner() {
+    private fun buttonClickListener() {
         s1c1Download_btn.setOnClickListener {
             url = urls().pdfUrl
             checkVersion(url)
         }
 
-        s1c2Download_btn.setOnClickListener {
+        s1c4Download_btn.setOnClickListener {
             url = urls().videoUrl
             checkVersion(url)
         }

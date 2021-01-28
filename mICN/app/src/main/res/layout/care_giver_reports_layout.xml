@@ -61,6 +61,18 @@
                 android:textStyle="bold"
                 android:padding="16dp"
                 android:layout_below="@id/expand_doctorName_tV"/>
+
+            <EditText
+                android:id="@+id/expand_report_eT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Report"
+                android:textColorHint="@color/ash"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="16dp"
+                android:layout_below="@id/expand_hospitalName_tV"/>
         </RelativeLayout>
 
     </LinearLayout>

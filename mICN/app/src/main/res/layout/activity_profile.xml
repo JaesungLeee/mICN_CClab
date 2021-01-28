@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center_horizontal"
-        android:text="User Profile {P/C}"
+        android:text="Update User Profile"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"

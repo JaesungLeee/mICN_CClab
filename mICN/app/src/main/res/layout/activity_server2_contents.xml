@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center_horizontal"
-        android:text="Contents"
+        android:text="Available Contents"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
@@ -38,7 +38,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
-        android:text="List of contents"
+        android:text="List of available contents at Hospital_Best"
         android:gravity="center"
         android:textStyle="bold"
         android:textSize="18sp"
@@ -50,7 +50,7 @@
     <LinearLayout
         android:id="@+id/scroll_lLaout"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="440dp"
         android:layout_marginTop="10dp"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -99,7 +99,7 @@
                             android:layout_height="wrap_content"
                             android:layout_toRightOf="@+id/s2c1Download_btn"
                             android:layout_marginLeft="15dp"
-                            android:text="contentsName"
+                            android:text="Available Doctors at Hopital Best"
                             android:textColor="@color/Pantoneblue"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -139,7 +139,7 @@
                             android:layout_height="wrap_content"
                             android:layout_toRightOf="@+id/s2c2Download_btn"
                             android:layout_marginLeft="15dp"
-                            android:text="contentsName"
+                            android:text="Perform an Emergency Treatment"
                             android:textColor="@color/Pantoneblue"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -179,7 +179,7 @@
                             android:layout_height="wrap_content"
                             android:layout_toRightOf="@+id/s2c3Download_btn"
                             android:layout_marginLeft="15dp"
-                            android:text="contentsName"
+                            android:text="Reports of Mr. Lee"
                             android:textColor="@color/Pantoneblue"
                             android:textSize="15sp"
                             android:textStyle="bold" />

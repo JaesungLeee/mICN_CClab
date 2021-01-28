@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center_horizontal"
-        android:text="My Reports"
+        android:text="Write a Report"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
