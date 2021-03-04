@@ -9,6 +9,7 @@ import com.example.micnjs.R
 import com.example.micnjs.UI.*
 import com.example.micnjs.UI.auth.login
 import com.example.micnjs.UI.auth.signup
+import com.example.micnjs.UI.careGiver.careGiverHome
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_patient_home.*
 
@@ -43,21 +44,32 @@ class patientHome : AppCompatActivity() {
         userBirth = intent.getStringExtra(USERBIRTH).toString()
         userType = intent.getStringExtra(USERTYPE).toString()
 
-
         Log.e("USERINFO", "uid : ${userUid}, nickname : ${userNickName}, password : ${userPW}, birth : ${userBirth}")
 
         welcome_tV.text = "Welcome ${userNickName}. How are you doing today?"
 
+        btnClickListener()
+    }
 
+
+    private fun logout() {
+        FirebaseAuth.getInstance().signOut()
+        Toast.makeText(this, "Logout Successful", Toast.LENGTH_SHORT).show()
+        val intent = Intent(this, login::class.java)
+        startActivity(intent)
+        finish()
+    }
+
+    private fun btnClickListener() {
         updateProfile_btn.setOnClickListener {
             val intent = Intent(this, profile::class.java).apply {
                 putExtra(USERUID, userUid)
-                putExtra(USERNICKNAME, userNickName)
-                putExtra(USERFULLNAME, userFullName)
-                putExtra(USEREMAIL, userEmail)
+//                putExtra(USERNICKNAME, userNickName)
+//                putExtra(USERFULLNAME, userFullName)
+//                putExtra(USEREMAIL, userEmail)
                 putExtra(USERPW, userPW)
-                putExtra(USERBIRTH, userBirth)
-                putExtra(USERTYPE, userType)
+//                putExtra(USERBIRTH, userBirth)
+//                putExtra(USERTYPE, userType)
             }
             startActivity(intent)
         }
@@ -85,13 +97,6 @@ class patientHome : AppCompatActivity() {
         pLogout_btn.setOnClickListener {
             logout()
         }
-    }
 
-    private fun logout() {
-        FirebaseAuth.getInstance().signOut()
-        Toast.makeText(this, "Logout Successful", Toast.LENGTH_SHORT).show()
-        val intent = Intent(this, login::class.java)
-        startActivity(intent)
-        finish()
     }
 }

@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18c3e3d8-618d-412b-8012-bb823d8fa7b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mICN/app/src/main/java/com/example/micnjs/RVadapters/patientContentsAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mICN/app/src/main/java/com/example/micnjs/RVadapters/patientContentsAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mICN/app/src/main/java/com/example/micnjs/UI/careGiver/contents/server1Contents.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mICN/app/src/main/java/com/example/micnjs/UI/careGiver/contents/server1Contents.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mICN/app/src/main/java/com/example/micnjs/UI/careGiver/contents/server2Contents.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mICN/app/src/main/java/com/example/micnjs/UI/careGiver/contents/server2Contents.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mICN/app/src/main/java/com/example/micnjs/UI/careGiver/contents/server3Contents.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mICN/app/src/main/java/com/example/micnjs/UI/careGiver/contents/server3Contents.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mICN/app/src/main/java/com/example/micnjs/UI/patient/patientContents.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mICN/app/src/main/java/com/example/micnjs/UI/patient/patientContents.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mICN/app/src/main/java/com/example/micnjs/UI/careGiver/careGiverHome.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mICN/app/src/main/java/com/example/micnjs/UI/careGiver/careGiverHome.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mICN/app/src/main/java/com/example/micnjs/UI/patient/patientHome.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mICN/app/src/main/java/com/example/micnjs/UI/patient/patientHome.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mICN/app/src/main/java/com/example/micnjs/UI/profile.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mICN/app/src/main/java/com/example/micnjs/UI/profile.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +24,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mICN" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -41,5 +40,11 @@
       <updated>1611811087197</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1614772273553">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614772273553" />
   </component>
 </project>

@@ -49,6 +49,19 @@ class careGiverHome : AppCompatActivity() {
 
         welcome_tV.text = "Hello ${userNickName}. Have a fuitful & nice day."
 
+        btnClickListener()
+
+    }
+
+    private fun logout() {
+        FirebaseAuth.getInstance().signOut()
+        Toast.makeText(this, "Logout Successful", Toast.LENGTH_SHORT).show()
+        val intent = Intent(this, login::class.java)
+        startActivity(intent)
+        finish()
+    }
+
+    private fun btnClickListener() {
         updateProfile_btn.setOnClickListener {
             val intent = Intent(this, profile::class.java).apply {
                 putExtra(USERUID, userUid)
@@ -85,13 +98,5 @@ class careGiverHome : AppCompatActivity() {
             val intent = Intent(this, emergency::class.java)
             startActivity(intent)
         }
-    }
-
-    private fun logout() {
-        FirebaseAuth.getInstance().signOut()
-        Toast.makeText(this, "Logout Successful", Toast.LENGTH_SHORT).show()
-        val intent = Intent(this, login::class.java)
-        startActivity(intent)
-        finish()
     }
 }
